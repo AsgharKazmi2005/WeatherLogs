@@ -14,11 +14,11 @@ function App() {
     img: "",
   });
   const [forecast, setForecast] = useState([]);
-  const [city, setCity] = useState(""); // State for city input
-  const [days, setDays] = useState(""); // State for number of days input
-  const [isRainyDay, setIsRainyDay] = useState(false); // State for rainy day filter
-  const [moonPhaseFilter, setMoonPhaseFilter] = useState(""); // State for moon phase filter
-  const [selectedDate, setSelectedDate] = useState(""); // State for selected date
+  const [city, setCity] = useState("");
+  const [days, setDays] = useState("");
+  const [isRainyDay, setIsRainyDay] = useState(false);
+  const [moonPhaseFilter, setMoonPhaseFilter] = useState("");
+  const [selectedDate, setSelectedDate] = useState("");
 
   const fetchData = async (city, days) => {
     try {
@@ -48,12 +48,10 @@ function App() {
 
   const filterForecast = () => {
     return forecast.filter((day) => {
-      // Apply rainy day filter
       if (isRainyDay && day.day.daily_chance_of_rain === 0) {
         return false;
       }
 
-      // Apply moon phase filter
       if (moonPhaseFilter) {
         const selectedMoonPhase = moonPhaseFilter.trim().toLowerCase();
         const dayMoonPhase = day.astro.moon_phase.trim().toLowerCase();
@@ -62,7 +60,6 @@ function App() {
         }
       }
 
-      // Apply date filter
       if (selectedDate && day.date !== selectedDate) {
         return false;
       }
