@@ -1,0 +1,150 @@
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgba(0, 136, 255, 0.155);
+  padding: 15px;
+}
+
+.search input {
+  border-radius: 10px;
+  border: 1px solid white;
+  margin: 0 15px;
+}
+
+.search div {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(13, 70, 103);
+  margin: 0 45px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.search div h3 {
+  margin: 0 0px 0 0;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.head {
+  width: 20%;
+}
+
+.header {
+  background-color: rgb(35, 74, 96);
+  width: 100%;
+  height: 1500px;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 10px;
+}
+.cardcont {
+  width: 80%;
+  margin: 50px 100px 0 100px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(1, 90, 163, 0.341);
+}
+.card {
+  margin: 10px;
+  background-color: rgba(2, 48, 86, 0.341);
+  width: 30%;
+  height: 90%;
+}
+
+.dayscont {
+  background-color: rgb(2, 48, 86);
+  margin-top: 100px;
+}
+
+.days {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+}
+
+.titlebar h6 {
+  margin: 0 0 0 30px;
+}
+
+h6 {
+  margin: 10px 30px 10px 30px;
+}
+
+.day {
+}
+
+.moon-phase {
+  flex-basis: calc(16ch + 10px); /* 16 characters + margin */
+}
+
+.condition {
+  flex-basis: calc(20ch + 10px); /* 20 characters + margin */
+}
+
+.filter {
+  background-color: rgba(2, 48, 86, 0.741);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
