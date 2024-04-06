@@ -22,14 +22,17 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
+
+
 Here's a walkthrough of implemented user stories:
 
-![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather2.gif)
+![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather3.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGIF
 
-Old Walkthrough:
+Old Walkthroughs:
+![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather2.gif)
 ![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather.gif)
 
 ## Notes
