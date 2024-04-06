@@ -6,18 +6,16 @@ function Pies(data) {
     name,
     number,
   }));
-  console.log(filteredData);
 
-  const test = [
-    { name: "A A", value: 2 },
-    { name: "B", value: 2 },
-    { name: "C", value: 8 },
-    { name: "D", value: 2 },
-  ];
-  console.log(test);
   return (
     <ResponsiveContainer width={300} height={300}>
-      <PieChart>
+      <PieChart
+        margin={{
+          top: 0,
+          right: 0,
+          left: 20,
+        }}
+      >
         <Pie
           data={filteredData}
           dataKey="number"

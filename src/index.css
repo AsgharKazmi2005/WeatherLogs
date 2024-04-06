@@ -1,11 +1,13 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    system-ui, Avenir, Arial, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url("https://static.scientificamerican.com/sciam/cache/file/6B2730C8-B0D0-485F-A0618F3954CF58D8_source.jpg?w=1200");
+  background-image: url("https://images.pexels.com/photos/13627288/pexels-photo-13627288.jpeg?cs=srgb&dl=pexels-dastan-khdir-13627288.jpg&fm=jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #db3d3d;

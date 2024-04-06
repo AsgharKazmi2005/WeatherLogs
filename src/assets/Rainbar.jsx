@@ -13,8 +13,17 @@ import {
 
 export function RainBar(data) {
   return (
-    <ResponsiveContainer width={300} height={350}>
-      <BarChart width="100px" aspect={3} data={data.data}>
+    <ResponsiveContainer width={405} height={350}>
+      <BarChart
+        width="300px"
+        aspect={3}
+        data={data.data}
+        margin={{
+          top: 30,
+          right: 40,
+          left: 0,
+        }}
+      >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="date" />
         <YAxis />

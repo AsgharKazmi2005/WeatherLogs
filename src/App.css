@@ -39,12 +39,18 @@
   justify-content: space-evenly;
   background-color: rgba(0, 136, 255, 0.155);
   padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.458);
 }
 
 .search input {
   border-radius: 10px;
   border: 1px solid white;
   margin: 0 15px;
+}
+
+.search button {
+  border: 1px solid gray;
+  transition: background-color 1s ease;
 }
 
 .search div {
@@ -64,14 +70,11 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
 .main {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .head {
@@ -79,8 +82,8 @@
 }
 
 .header {
-  background-color: rgb(35, 74, 96);
-  width: 100%;
+  background-color: rgb(11, 22, 68, 0.6);
+  width: 20%;
   height: 1500px;
   display: flex;
   justify-content: center;
@@ -100,26 +103,30 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 99.85%;
   background-color: rgba(1, 90, 163, 0.341);
+  border: 1px solid rgba(255, 255, 255, 0.458);
 }
 .card {
   margin: 10px;
   background-color: rgba(2, 48, 86, 0.341);
+  border: 1px solid rgba(255, 255, 255, 0.458);
   width: 30%;
   height: 90%;
+  border-radius: 10px;
 }
 
 .datacont {
-  margin-top: 100px;
-  border: 1px solid white;
+  margin-top: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.507);
   display: flex;
 }
 
 .dayscont {
-  background-color: rgb(2, 48, 86);
+  background-color: rgba(1, 15, 43, 0.715);
   width: 50%;
   width: 100%;
+  transition: 1s ease;
 }
 
 .graphs {
@@ -129,10 +136,10 @@
   align-items: center;
   padding: 10px;
   background-color: rgb(2, 7, 33);
+  border: 1px solid rgb(90, 90, 90);
 }
 
 .rain {
-  background-color: rgb(11, 18, 58);
   display: flex;
   justify-content: center;
   border-radius: 10px;
@@ -140,7 +147,6 @@
 }
 
 .weather {
-  background-color: rgb(11, 18, 58);
   margin-top: 20px;
   padding: 10px;
   border-radius: 10px;
@@ -149,46 +155,70 @@
 .days {
   display: flex;
   flex-direction: row;
-  border: 1px solid white;
+  border: 1px solid rgba(82, 82, 82, 0.125);
+  justify-content: space-evenly;
+}
+
+.days h6 {
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.529);
+}
+
+.titlebar {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(82, 82, 82, 0.548);
+  align-items: center;
+  padding: 5px 0 5px 0;
+
+  justify-content: space-around;
 }
 
 .titlebar h6 {
-  margin: 0px 0px 0px 10px;
-}
-
-h6 {
-  margin: 10px 10px 10px 10px;
-}
-
-.moon-phase {
-  flex-basis: calc(16ch + 10px); /* 16 characters + margin */
-}
-
-.condition {
-  flex-basis: calc(20ch + 10px); /* 20 characters + margin */
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .filter {
   background-color: rgba(2, 48, 86, 0.741);
   padding: 10px;
-  border-radius: 10px;
-  margin-top: 25px;
   display: flex;
   justify-content: space-evenly;
+  border: 1px solid rgba(255, 255, 255, 0.458);
 }
 
 .recharts-responsive-container {
-  padding-top: 50px;
-  padding-right: 50px;
-  display: contents;
+  height: 300px;
+  width: 500px;
 }
 
 .containerWeather {
   display: flex;
   justify-content: center;
   margin-top: 70px;
+  width: 20%;
+  margin-right: 20px;
 }
 .weatherCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 72);
+  width: 100%;
+}
+
+.hourlyMain {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.hourly {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,5 +226,122 @@ h6 {
   border: 1px solid white;
   border-radius: 10px;
   background-color: rgb(0, 0, 72);
-  width: 50%;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.hourlycont {
+  display: flex;
+  width: 78%;
+  margin-top: 70px;
+}
+
+.hourlybar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hours {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.buttons {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  width: 33.333333%;
+  border-radius: 0px;
+  border: 1px solid gray;
+  transition: background-color 1s ease;
+}
+
+.date {
+  width: 10%;
+}
+
+.avg {
+  width: 7.5%;
+}
+.r {
+  width: 7.5%;
+}
+.sr {
+  width: 12.5%;
+}
+.ss {
+  width: 12.5%;
+}
+.mmoon {
+  width: 17.5%;
+}
+.cond {
+  width: 20%;
+}
+.link {
+  width: 12.5%;
+}
+
+.active {
+  background-color: rgba(0, 0, 89, 0.736);
+}
+
+.hourlybar h6 {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+}
+
+.hours h6 {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  margin: 0 0 5px 0;
+}
+
+.htemp {
+  width: 10%;
+}
+
+.hfl {
+  width: 10%;
+}
+
+.hgust {
+  width: 10%;
+}
+
+.humidity {
+  width: 10%;
+}
+
+.hpressure {
+  width: 10%;
+}
+
+.hvis {
+  width: 10%;
+}
+
+.hwindir {
+  width: 10%;
+}
+
+.hwindspd {
+  width: 10%;
+}
+
+.hwindchl {
+  width: 10%;
+}
+
+.htime {
+  width: 10%;
 }
