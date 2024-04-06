@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function List({
   date,
   avgtemp_f,
@@ -18,7 +21,6 @@ function List({
     }
   }
 
-  console.log(padString(condition, 20));
   return (
     <div className="days">
       <h6>{date}</h6>
@@ -30,6 +32,10 @@ function List({
       <h6>{sunset}</h6>
       <h6 className="moon-phase">{padString(moon_phase, 16)}</h6>
       <h6 className="condition">{padString(condition, 20)}</h6>
+      <Link to={`/details/${date}`} className="list-link">
+        {"🔗"}
+        {/* Link to the details page */}
+      </Link>
     </div>
   );
 }
