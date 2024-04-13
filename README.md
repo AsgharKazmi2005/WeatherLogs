@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather4-Final.gif)
+![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather4.gif)
 
 GIF created with ScreenToGIF
 
