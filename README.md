@@ -26,14 +26,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather3.gif)
+![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather4-Final.gif)
 
-<!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGIF
 
-Old Walkthroughs:
-![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather2.gif)
-![](https://github.com/AsgharKazmi2005/WeatherLogs/blob/main/Weather.gif)
 
 ## Notes
 Describe any challenges encountered while building the app.
