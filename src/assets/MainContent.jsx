@@ -34,7 +34,7 @@ function MainContent() {
   const fetchData = async (city, days) => {
     try {
       const response = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json?key=258ca2f115cb4af1997192108242903&q=${city}&days=${days}`
+        `http://api.weatherapi.com/v1/forecast.json?key={KEY_HERE}&q=${city}&days=${days}`
       );
       console.log(response.data);
       setCurrentFetch(response.data);
